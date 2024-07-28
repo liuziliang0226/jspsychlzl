@@ -1,0 +1,64 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d57fef;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 50px; /* 容器高度 */
+    background-color: #da5e5e; /* 背景颜色 */
+  }
+
+.flex-item {
+    flex: 1; /* 允许子项伸缩 */
+    min-width: 150px; /* 设置最小宽度 */
+    margin: 5px; /* 子项之间的间距 */
+    padding: 10px; /* 子项内边距 */
+    box-sizing: border-box; /* 边框计算在宽度内 */
+    text-align: center; /* 文本居中 */
+  }
+
+#jspsych-target {
+    width: 80%;
+    max-width: 800px; /* 限制最大宽度 */
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.survey-multi-choice-container {
+    display: flex; /* 启用Flexbox布局 */
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: flex-start; /* 垂直方向上从顶部开始 */
+  }
+
+.survey-multi-choice-item {
+    flex: 1; /* 允许子项伸缩 */
+    min-width: 150px; /* 设置最小宽度 */
+    margin: 5px; /* 子项之间的间距 */
+    padding: 10px; /* 子项内边距 */
+    box-sizing: border-box; /* 边框计算在宽度内 */
+    text-align: center; /* 文本居中 */
+  }
+
+  /* 响应式布局 */
+  @media (max-width: 768px) {
+    .survey-multi-choice-item {
+      flex-basis: 100%; /* 在较小屏幕上，每个选项占满一行 */
+    }
+  }
